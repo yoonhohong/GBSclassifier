@@ -1,0 +1,12 @@
+name: "GBSclassifier"
+output_dir: "docs"
+navbar:
+  title: "The GBS Classifier Project"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "GBS classifier"
+      href: GBSclassifier.html
+output:
+  html_document:
+    theme: cosmo
