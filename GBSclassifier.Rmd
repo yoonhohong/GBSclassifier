@@ -6,9 +6,45 @@ title: "GBS classifier"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-1. Prepare an input NCS data file 
+## 1. Prepare NCS data (converted to percentage values relative to upper or lower limit of normal) 
+
+You need two excel files which you can download at  [here](https://github.com/yoonhohong/NCViewer/tree/master/NCSdata)  
+- Input_NCSdata_ver1.1.xlsx  
+- Wformat_NCSdata_ver1.1.xlsx   
+
+'Input_NCSdata_ver\*.\*' file is to convert raw values into percentage values relative to upper or lower limit of normal as appropriate (in case of F-wave latency, upper limit of normal value is adjusted with subject's height). When you fill in green-colored cells in the excel file, it automatically converts the raw value into percentage value, the latter appears in the second row of the file. 
+
+*Note: important!*  
+> Leave the cells blank if corresponding nerves were not tested. In cases that a nerve was tested but no CMAP (or SNAP) response was elicited, write the number zero (e.g., 0) in the places of CMAP (or SNAP) amplitude. It is important to leave blank the places of other parameters than CMAP (or SNAP) amplitudes.    
+
+Next, fill in the other fields of the second row, which include Hosp (hospital), Date (date of study), Name (initial in English), ID (hospital ID), Sex and Age.    
+
+After that, copy the row (select the entire second row, right-click, and select Copy).   
+
+## 2. Create an NCS data file for input  
+
+Open the 'Wformat_NCSdata_ver\*.\*' file, and paste what you copied.  
+
+*Note*   
+Right-click and select Values under 'Paste Options'.   
+
+Now, you are all set for the graphic representation of NCS data which is implemented in a web application named **NCViewer**. 
+
+## 3. NCViewer 
+
+Go to NCViewer website via this [link](https://yoonhohong.shinyapps.io/ncviewer/)
+
+First, you should select the NCS data file you prepared in previous section for input. Click Browse button in the left panel of the website, and select the input file. 
+
+You can download an example input file 'BRM_GBS_NCS_2010_2017.xlsx' at [here](https://github.com/yoonhohong/NCViewer/tree/master/NCSdata)  
+
+This file contains longitudinal NCS data obtained from GBS patients in BRM hospital between the year 2010 and 2017.   
+
+Using the examplenary file, you can explore various functionalities of NCViewer. 
 
 
-## Including Plots
+
+
+
 
 
