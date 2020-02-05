@@ -1,5 +1,5 @@
 ---
-title: "GBS classifier"
+title: "NCViewer & GBS classifier"
 output: html_document
 ---
 
@@ -7,4 +7,23 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## GBS classifier 
+## 1. NCViewer 
+
+Graphic representation of NCS data 
+
+### Background 
+
+### Goals 
+- To facilitate interpretation of NCS   
+- To identify EDX pattern according to pathological subtypes (e.g., axonal vs. demyelinating)
+
+#### Tile plot 
+
+#### Parameter view 
+
+#### Nerve view  
+
+## 2. GBS classifier 
+
+
+

@@ -5,8 +5,8 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "GBS classifier"
-      href: GBSclassifier.html
+    - text: "Tutorial"
+      href: tutorial.html
 output:
   html_document:
     theme: cosmo

@@ -12,7 +12,7 @@
 
 
 
-<title>GBS classifier</title>
+<title>Tutorial</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -275,7 +275,7 @@ $(document).ready(function () {
   <a href="index.html">Home</a>
 </li>
 <li>
-  <a href="GBSclassifier.html">GBS classifier</a>
+  <a href="tutorial.html">Tutorial</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -289,31 +289,35 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">GBS classifier</h1>
+<h1 class="title toc-ignore">Tutorial</h1>
 
 </div>
 
 
-<div id="prepare-ncs-data-converted-to-percentage-values-relative-to-upper-or-lower-limit-of-normal" class="section level2">
-<h2>1. Prepare NCS data (converted to percentage values relative to upper or lower limit of normal)</h2>
+<div id="prepare-ncs-data" class="section level2">
+<h2>1. Prepare NCS data</h2>
 <p>You need two excel files which you can download at <a href="https://github.com/yoonhohong/NCViewer/tree/master/NCSdata">here</a><br />
 - Input_NCSdata_ver1.1.xlsx<br />
 - Wformat_NCSdata_ver1.1.xlsx</p>
 <p>‘Input_NCSdata_ver*.*’ file is to convert raw values into percentage values relative to upper or lower limit of normal as appropriate (in case of F-wave latency, upper limit of normal value is adjusted with subject’s height). When you fill in green-colored cells in the excel file, it automatically converts the raw value into percentage value, the latter appears in the second row of the file.</p>
-<p><em>Note: important!</em><br />
-&gt; Leave the cells blank if corresponding nerves were not tested. In cases that a nerve was tested but no CMAP (or SNAP) response was elicited, write the number zero (e.g., 0) in the places of CMAP (or SNAP) amplitude. It is important to leave blank the places of other parameters than CMAP (or SNAP) amplitudes.</p>
+<p><strong>Note: important!</strong></p>
+<blockquote>
+<p>Leave the cells blank if corresponding nerves were not tested. In cases that a nerve was tested but no CMAP (or SNAP) response was elicited, write the number zero (e.g., 0) in the places of CMAP (or SNAP) amplitude. It is important to leave blank the places of other parameters than CMAP (or SNAP) amplitudes.</p>
+</blockquote>
 <p>Next, fill in the other fields of the second row, which include Hosp (hospital), Date (date of study), Name (initial in English), ID (hospital ID), Sex and Age.</p>
 <p>After that, copy the row (select the entire second row, right-click, and select Copy).</p>
 </div>
-<div id="create-an-ncs-data-file-for-input" class="section level2">
-<h2>2. Create an NCS data file for input</h2>
+<div id="create-ncs-data-file-for-input" class="section level2">
+<h2>2. Create NCS data file for input</h2>
 <p>Open the ‘Wformat_NCSdata_ver*.*’ file, and paste what you copied.</p>
-<p><em>Note</em><br />
-Right-click and select Values under ‘Paste Options’.</p>
+<p><strong>Note</strong></p>
+<blockquote>
+<p>Right-click and select Values under ‘Paste Options’.</p>
+</blockquote>
 <p>Now, you are all set for the graphic representation of NCS data which is implemented in a web application named <strong>NCViewer</strong>.</p>
 </div>
-<div id="ncviewer" class="section level2">
-<h2>3. NCViewer</h2>
+<div id="explore-ncviewer" class="section level2">
+<h2>3. Explore NCViewer</h2>
 <p>Go to NCViewer website via this <a href="https://yoonhohong.shinyapps.io/ncviewer/">link</a></p>
 <p>First, you should select the NCS data file you prepared in previous section for input. Click Browse button in the left panel of the website, and select the input file.</p>
 <p>You can download an example input file ‘BRM_GBS_NCS_2010_2017.xlsx’ at <a href="https://github.com/yoonhohong/NCViewer/tree/master/NCSdata">here</a></p>
